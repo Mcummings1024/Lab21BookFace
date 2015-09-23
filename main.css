@@ -89,6 +89,15 @@ img {
 	max-width: 200px;
 }
 
+.whoops{
+	max-width: 800px;
+	height: 500px;
+	width: 500px;
+}
+.text{
+	text-align: center;
+}
+
 .newsFeed {
 	background-color: #3b5998;
 	padding: 20px;

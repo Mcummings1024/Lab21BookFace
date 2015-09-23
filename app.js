@@ -9,13 +9,13 @@ app.config(function($routeProvider) {
 	$routeProvider.when('/chatView',
 	{
 		controller: 'ChatController',
-		templateUrl: 'chatView'
+		templateUrl: 'chatView.html'
 	});
 	$routeProvider.otherwise(
 	{ 
 		redirectTo: '/404',
 		controller: 'WhoopsController',
-		templateUrl: '404' 
+		templateUrl: '404.html' 
 	});
   });
 
