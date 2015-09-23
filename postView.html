@@ -1,0 +1,7 @@
+<form>
+	Post Submission:
+	ImageURL: <input type="text" ng-model="url">
+	Caption: <input type="text" ng-model="caption">
+	<button class="btn btn-primary" ng-click="addPost()">Submit</button>
+</form>
+<post ng-repeat="post in posts"></post>

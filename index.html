@@ -1,18 +1,25 @@
 <!doctype html>
-<html>
+<html ng-app="bookFaceApp">
 	<head>
 		<title>BookFace</title>
 		<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="main.css">	
+	</head>
+	<body>
+		<header><h1 class="inline">BookFace</h1> <h2 class="inline">A new social network (TM)</h2></header>
+
+		<a href="#/"><button class="btn btn-primary">Post View</button></a>
+		<a href="#/chatView"><button class="btn btn-primary">Chat View</button></a>
+
+		<!-- Post view and chat view go below -->
+		<ng-view></ng-view>
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
 		<script src="https://code.angularjs.org/1.4.6/angular-route.js"></script>
 		<script src="app.js"></script>
-	</head>
-	<body>
-		<header><h1>BookFace</h1> <h2>A new social network (TM)</h2></header>
-		<nav>This will be on the left </nav>
-		<!-- Post view and chat view go below -->
-		<ng-view></ng-view>
+		<script src="postService.js"></script>
+		<script src="post.js"></script>
+		<script src="chat.js"></script>
 	</body>
 </html>

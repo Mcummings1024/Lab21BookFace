@@ -1,14 +1,14 @@
 var app = angular.module('bookFaceApp', ['ngRoute']);
 
-app.config(function($scope) {
+app.config(function($routeProvider) {
 	$routeProvider.when('/',
 	{
 		controller: 'PostController',
-		templateUrl: 'postView'
+		templateUrl: 'postView.html'
 	});
-	$routeProvider.when('/formatView',
+	$routeProvider.when('/chatView',
 	{
-		controller: 'FormatController',
+		controller: 'ChatController',
 		templateUrl: 'chatView'
 	});
 	$routeProvider.otherwise(
@@ -17,21 +17,21 @@ app.config(function($scope) {
 		controller: 'WhoopsController',
 		templateUrl: '404' 
 	});
+  });
+
+app.controller('PostController', function($scope, postService) {
+	$scope.posts = postService.posts;
+	$scope.addPost = function() {
+		console.log("test");
+		postService.addPost({image: $scope.url, caption: $scope.caption});
+	}
 });
 
-app.controller = ('NavController', function() {
-
+app.controller('ChatController', function() {
+	console.log("blarp");
 });
 
-app.controller = ('PostController', function() {
+app.controller('WhoopsController', function() {
 
-});
-
-app.controller = ('ChatController', function() {
-
-});
-
-app.controller = ('WhoopsController', function() {
-	
 });
 
