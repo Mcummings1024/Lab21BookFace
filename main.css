@@ -1,3 +1,35 @@
+@font-face {
+	font-family: bebasBold;
+	src: url("Bebas/BebasNeue_Bold.otf");
+}
+
+@font-face {
+	font-family: bebasReg;
+	src: url("Bebas/BebasNeue Regular.otf");
+}
+
+body {
+	font-family: bebasReg;
+	font-size: 24px;
+	margin: 20px;
+}
+
+header {
+	font-family: bebasBold;
+	margin: 10px;
+	padding: 10px;
+}
+
+button {
+	font-family: bebasReg;
+	font-size: 18px;
+	margin: 10px;
+}
+
+.post {
+	background-color: #D1DBBD;
+}
+
 .inline {
 	display: inline;
 }
