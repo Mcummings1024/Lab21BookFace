@@ -19,11 +19,23 @@ app.config(function($routeProvider) {
 	});
   });
 
-app.controller('PostController', function($scope, postService) {
-	$scope.posts = postService.posts;
+app.controller('PostController', function($scope) {
+	$scope.posts = [
+	    {
+	      image:"http://dc435.4shared.com/img/jMdBfbDe/s3/1334fc01420/cute-cat", 
+	      caption: "cute cat"},
+	    {
+	      image:"http://easthillsanimalclinic.com/wp-content/gallery/home-page-photos/happy-cat-01.jpg",
+	      caption:"cuter cat"
+	    },
+	    {
+	      image:"http://www.forumspile.com/Understand-Cat_(Melon).jpg", 
+	      caption:"cutest cat"
+	    }
+  	];
 	$scope.addPost = function() {
 		console.log("test");
-		postService.addPost({image: $scope.url, caption: $scope.caption});
+		$scope.posts.push({image: $scope.url, caption: $scope.caption});
 	}
 });
 
