@@ -1,16 +1,16 @@
 Layout:
 
-	Header
+	Header (Done)
 
-	Nav 
+	Nav (Could use some styling)
 
-	Posts : ng-repeat
-		-Image
-		-Paragraph
-		-Status/Likes
+	Posts : ng-repeat (85% done)
+		-Image (Done)
+		-Paragraph (Done)
+		-Status/Likes (Ted)
 
-	Chat
-		-Show active users
+	Chat (0%)
+		-Show active users 
 
 JS:
 	PostController
@@ -20,6 +20,8 @@ JS:
 	ChatController
 
 	Add user feature?
+
+	Need external api (like reddit json)
 
 
 
