@@ -31,7 +31,9 @@ ul {
 }
 
 .post {
-	background-color: #D1DBBD;
+	background-color: #8b9dc3;
+	padding: 20px;
+	border: 2px solid black;
 }
 
 .inline {
@@ -46,14 +48,25 @@ ul {
 
 .chatBox {	
 	border: 2px solid black;
-	background-color: #3399FF;
+	background-color: #3b5998;
 	margin: 40px;
 	padding: 20px;
 	position: relative;
 	top: -250px;
 	left: 200px;
 	width: 700px;
-	height: 500px;
+	height: auto;
+}
+
+.messageBox {
+	background-color: #8b9dc3;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 10px;
+}
+ 
+.msgForm {
+	margin: 20px;
 }
 
 .user {
@@ -61,6 +74,13 @@ ul {
 	padding: 10px;
 }
 
+.user:hover {
+	background-color: #3b5998;
+}
+
+.user:active {
+	background-color: #8b9dc3;
+}
 .user:first-child {
 	border-top: none;
 }
@@ -70,6 +90,11 @@ img {
 }
 
 .newsFeed {
+	background-color: #3b5998;
 	padding: 20px;
 	border: 2px solid black;
+}
+
+.pform {
+	padding: 20px;
 }

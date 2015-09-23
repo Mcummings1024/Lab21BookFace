@@ -40,7 +40,15 @@ app.controller('PostController', function($scope, postService) {
 
 app.controller('ChatController', function($scope, postService) {
 	$scope.users = postService.getUsers();
-
+	$scope.msgs = postService.getMsgs();
+	$scope.addMsg = function() {
+		postService.addMsg($scope.msg);
+		$scope.resetForm();
+	}
+	$scope.resetForm = function() {
+		$scope.msg = "";
+		$scope.postForm.$setPristine();
+	}
 });
 
 app.controller('WhoopsController', function() {

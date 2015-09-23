@@ -3,6 +3,9 @@
 </div>
 
 <div class="chatBox">
-	messages go here
-	<form><input type="text" placeholder="Write your message here...">
+	<div ng-repeat="msg in msgs track by $index" class="messageBox">{{msg}}</div>
+	<form ng-submit="addMsg()" class="msgForm">
+		<textarea name="msgForm" ng-model="msg" rows="4" cols="50" placeholder="Write a message here..."/>
+		<button class="btn">Enter</button>
+	</form>
 </div>

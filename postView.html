@@ -1,9 +1,9 @@
-<form name="postForm">
+<form name="postForm" class="pform">
 	Post Submission:
 	ImageURL: <input type="text" ng-model="post.image" placeholder="URL">
 	Caption: <input type="text" ng-model="post.caption" placeholder="Caption">
 	<button class="btn btn-primary" ng-click="addPost()">Submit</button>
 </form>
 <div class="newsFeed">
-	<post class="post" ng-repeat="post in posts"></post>
+	<post  ng-repeat="post in posts"></post>
 </div>

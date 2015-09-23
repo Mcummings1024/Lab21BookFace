@@ -18,6 +18,8 @@ app.factory('postService', function(){
 
   var users = ['Ted', 'Troy', 'Charlie', 'Matt'];
 
+  var msgs = ['Hi', 'What is up', 'Not much'];
+
   return {
     getPosts: function() {
       return posts;
@@ -27,6 +29,12 @@ app.factory('postService', function(){
     },
     getUsers: function() {
       return users;
+    },
+    getMsgs: function() {
+      return msgs;
+    },
+    addMsg: function(msg) {
+      return msgs.push(msg);
     }
   };
 });
