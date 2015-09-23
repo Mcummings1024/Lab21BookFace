@@ -37,14 +37,22 @@ ul {
 .post {
 	background-color: #8b9dc3;
 	height: 300px;
+	width: 375px;
 	padding: 20px;
-	margin: 20px;
+	margin: auto 20px;
 	border: 2px solid black;
 	display: inline-block;
+	text-align: center;
 }
 
 .inline {
 	display: inline;
+}
+
+.logo {
+	border-radius: 100%;
+	max-width: 50px;
+	max-height: 50px;
 }
 
 .userList {
@@ -94,15 +102,17 @@ ul {
 
 img {
 	max-width: 200px;
-	max-height: 200px;
+	height: 200px;
 }
 
 .newsFeed {
 	background-color: #3b5998;
 	padding: 20px;
 	border: 2px solid black;
+	margin: auto 0;
 }
 
 .pform {
 	padding: 20px;
 }
+
