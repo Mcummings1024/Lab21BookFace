@@ -7,12 +7,20 @@ app.factory('postService', function(){
         caption: "Matt playing some smooth jazz."
       },
       {
-        image:"http://easthillsanimalclinic.com/wp-content/gallery/home-page-photos/happy-cat-01.jpg",
-        caption:"cuter cat"
+        image:"https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/10710403_10205466753655203_4204290926396100321_o.jpg",
+        caption:"Matt looking weird as shit (with all due respect)"
       },
       {
-        image:"http://www.forumspile.com/Understand-Cat_(Melon).jpg", 
-        caption:"cutest cat"
+        image:"https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpt1/t31.0-8/11856472_10207390168101884_3838019198745531757_o.jpg", 
+        caption:"Troy's first 5 minutes in mama bears arms"
+      },
+      {
+        image:"https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/1476720_10201019322666503_288757992_n.jpg?oh=ad39206ca51653bfda6d2f24e264961a&oe=56A7B8F4",
+        caption: "Charlie up in da club"
+      },
+      {
+        image:"https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/1549339_622394561130248_594127441_n.jpg?oh=522427a6b3ed478f3d18b41f7f6369f2&oe=56A76624",
+        caption: "Ted and baby Ted"
       }
   ];
 
