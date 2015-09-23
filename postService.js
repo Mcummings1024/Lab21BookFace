@@ -3,8 +3,8 @@ var app = angular.module('bookFaceApp');
 app.factory('postService', function(){
   var posts = [
       {
-        image:"http://dc435.4shared.com/img/jMdBfbDe/s3/1334fc01420/cute-cat", 
-        caption: "cute cat"
+        image:"https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10253863_10202361309474514_3177711296978397034_n.jpg?oh=a16a2aa2f320aee2827fdb1dda525a2c&oe=56AAECAA", 
+        caption: "Matt playing some smooth jazz."
       },
       {
         image:"http://easthillsanimalclinic.com/wp-content/gallery/home-page-photos/happy-cat-01.jpg",

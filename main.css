@@ -8,6 +8,14 @@
 	src: url("Bebas/BebasNeue Regular.otf");
 }
 
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
 body {
 	font-family: bebasReg;
 	font-size: 24px;
@@ -20,10 +28,11 @@ header {
 	padding: 10px;
 }
 
-button {
+.btn {
 	font-family: bebasReg;
-	font-size: 18px;
+	font-size: 24px;
 	margin: 10px;
+	padding: 5px;
 }
 
 ul {
@@ -31,7 +40,14 @@ ul {
 }
 
 .weather {
+	width: 300px;
 	float: right;
+}
+
+.icon {
+	float: left;
+	width: 50px;
+	height: 50px;
 }
 
 .post {
@@ -50,9 +66,14 @@ ul {
 }
 
 .logo {
-	border-radius: 100%;
-	max-width: 50px;
-	max-height: 50px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.logo:hover {
+	width: 150px;
+	height: 150px;
 }
 
 .userList {
@@ -101,16 +122,12 @@ ul {
 }
 
 img {
-	max-width: 200px;
-
 	height: 200px;
-
-	max-height: 200px;
-
 }
 
 .whoops{
-	max-width: 800px;
+	display:  block;
+	margin: 0 auto;
 	height: 500px;
 	width: 500px;
 }
