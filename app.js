@@ -19,6 +19,21 @@ app.config(function($routeProvider) {
 	});
   });
 
+app.controller('ShellController', function($scope, $http) {
+	$scope.weatherApp =32;
+	$scope.test = "hello";
+	$http.get('http://api.wunderground.com/api/ce6edafbce457588/conditions/q/MI/Detroit.json')
+		.success(function(data) {
+			console.log(data); 
+			$scope.weatherApp = data;
+			console.log($scope.weatherApp);
+			console.log(data.current_observation.temp_f);
+		})
+		.error(function(data, status) {
+			console.log("There was an error or something: Code " + status);
+		});
+});
+
 app.controller('PostController', function($scope, postService) {
 	$scope.posts = postService.getPosts();
 	$scope.post = {
@@ -47,7 +62,7 @@ app.controller('ChatController', function($scope, postService) {
 	}
 	$scope.resetForm = function() {
 		$scope.msg = "";
-		$scope.postForm.$setPristine();
+		$scope.msgForm.$setPristine();
 	}
 });
 

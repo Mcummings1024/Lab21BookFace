@@ -30,10 +30,17 @@ ul {
 	list-style-type: none;
 }
 
+.weather {
+	float: right;
+}
+
 .post {
 	background-color: #8b9dc3;
+	height: 300px;
 	padding: 20px;
+	margin: 20px;
 	border: 2px solid black;
+	display: inline-block;
 }
 
 .inline {
@@ -87,6 +94,7 @@ ul {
 
 img {
 	max-width: 200px;
+	max-height: 200px;
 }
 
 .newsFeed {
