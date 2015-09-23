@@ -4,7 +4,8 @@ app.factory('postService', function(){
   var posts = [
       {
         image:"http://dc435.4shared.com/img/jMdBfbDe/s3/1334fc01420/cute-cat", 
-        caption: "cute cat"},
+        caption: "cute cat"
+      },
       {
         image:"http://easthillsanimalclinic.com/wp-content/gallery/home-page-photos/happy-cat-01.jpg",
         caption:"cuter cat"
@@ -14,12 +15,18 @@ app.factory('postService', function(){
         caption:"cutest cat"
       }
   ];
+
+  var users = ['Ted', 'Troy', 'Charlie', 'Matt'];
+
   return {
     getPosts: function() {
       return posts;
     },
     addPost: function(post) {
       return posts.push(post);
+    },
+    getUsers: function() {
+      return users;
     }
   };
 });

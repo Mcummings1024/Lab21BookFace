@@ -1,4 +1,8 @@
-<img src="">
-<img src="">
-<h1>Chat Test</h1>
-<p>More Chat Tests</p>
+<div class="userList">
+	<div ng-repeat="user in users" class="user">{{user}}</div>
+</div>
+
+<div class="chatBox">
+	messages go here
+	<form><input type="text" placeholder="Write your message here...">
+</div>

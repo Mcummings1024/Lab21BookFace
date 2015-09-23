@@ -21,14 +21,26 @@ app.config(function($routeProvider) {
 
 app.controller('PostController', function($scope, postService) {
 	$scope.posts = postService.getPosts();
-	console.log($scope.posts);
+	$scope.post = {
+		image: "",
+		caption: ""
+	};
+
+	var templatePost = angular.copy($scope.post);
+
 	$scope.addPost = function() {
-		postService.addPost({image: $scope.url, caption: $scope.caption});
+		postService.addPost($scope.post);
+		$scope.resetForm();
+	}
+	$scope.resetForm = function() {
+		$scope.post = angular.copy(templatePost);
+		$scope.postForm.$setPristine();
 	}
 });
 
-app.controller('ChatController', function() {
-	console.log("blarp");
+app.controller('ChatController', function($scope, postService) {
+	$scope.users = postService.getUsers();
+
 });
 
 app.controller('WhoopsController', function() {
