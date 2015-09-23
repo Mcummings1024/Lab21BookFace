@@ -102,7 +102,20 @@ ul {
 
 img {
 	max-width: 200px;
+
 	height: 200px;
+
+	max-height: 200px;
+
+}
+
+.whoops{
+	max-width: 800px;
+	height: 500px;
+	width: 500px;
+}
+.text{
+	text-align: center;
 }
 
 .newsFeed {
