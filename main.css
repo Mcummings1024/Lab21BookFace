@@ -19,13 +19,27 @@ h2 {
 body {
 	font-family: bebasReg;
 	font-size: 24px;
-	margin: 20px;
+	margin: 50px;
 }
 
 header {
 	font-family: bebasBold;
+	background-color: white;
 	margin: 10px;
 	padding: 10px;
+	position: fixed;
+	top: -10px;
+	width: 95%;
+	z-index: 900000000000;
+}
+
+img {
+	height: 200px;
+	max-width: 250px;
+}
+
+.header {
+	margin-top: 20px;
 }
 
 .btn {
@@ -35,27 +49,22 @@ header {
 	padding: 5px;
 }
 
-ul {
-	list-style-type: none;
-}
-
 .weather {
 	width: 300px;
 	float: right;
 }
 
 .icon {
+	margin-right: 5px;
 	float: left;
-	width: 50px;
-	height: 50px;
+	width: 75px;
+	height: 75px;
 }
 
 .post {
 	background-color: #8b9dc3;
-	height: 300px;
-	width: 375px;
 	padding: 20px;
-	margin: auto 20px;
+	margin: 20px;
 	border: 2px solid black;
 	display: inline-block;
 	text-align: center;
@@ -79,7 +88,8 @@ ul {
 .userList {
 	border: 2px solid black;
 	margin: 40px;
-	width: 182px;
+	margin-left: 100px;
+	width: 120px;
 }
 
 .chatBox {	
@@ -88,7 +98,7 @@ ul {
 	margin: 40px;
 	padding: 20px;
 	position: relative;
-	top: -250px;
+	top: -265px;
 	left: 200px;
 	width: 700px;
 	height: auto;
@@ -102,7 +112,12 @@ ul {
 }
  
 .msgForm {
-	margin: 20px;
+	margin: 10px;
+	width: auto;
+}
+
+.msgInput {
+	width: 555px;
 }
 
 .user {
@@ -111,6 +126,7 @@ ul {
 }
 
 .user:hover {
+	color: white;
 	background-color: #3b5998;
 }
 
@@ -119,10 +135,6 @@ ul {
 }
 .user:first-child {
 	border-top: none;
-}
-
-img {
-	height: 200px;
 }
 
 .whoops{
@@ -139,10 +151,14 @@ img {
 	background-color: #3b5998;
 	padding: 20px;
 	border: 2px solid black;
-	margin: auto 0;
+	margin: auto 100px;
 }
 
 .pform {
-	padding: 20px;
+	padding: 10px;
+	margin: auto 100px;
 }
 
+.view {
+	margin-top: 120px;
+}

@@ -1,11 +1,13 @@
-<div class="userList">
-	<div ng-repeat="user in users" class="user">{{user}}</div>
-</div>
+<div class="view">
+	<div class="userList">
+		<div ng-repeat="user in users" class="user">{{user}}</div>
+	</div>
 
-<div class="chatBox">
-	<div ng-repeat="msg in msgs track by $index" class="messageBox">{{msg}}</div>
-	<form ng-submit="addMsg()" class="msgForm">
-		<textarea name="msgForm" ng-model="msg" rows="4" cols="50" placeholder="Write a message here..."/>
-		<button class="btn">Enter</button>
-	</form>
+	<div class="chatBox">
+		<div ng-repeat="msg in msgs track by $index" class="messageBox">{{msg}}</div>
+		<form name="msgForm" ng-submit="addMsg()" class="msgForm">
+			<input type="text" class="msgInput" ng-model="msg" placeholder="Write a message here..."/>
+			<button class="btn">Enter</button>
+		</form>
+	</div>
 </div>

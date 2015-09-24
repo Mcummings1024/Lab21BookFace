@@ -51,6 +51,9 @@ app.controller('PostController', function($scope, postService) {
 		$scope.post = angular.copy(templatePost);
 		$scope.postForm.$setPristine();
 	}
+	$scope.zoomImage = function() {
+		$scope
+	}
 });
 
 app.controller('ChatController', function($scope, postService) {

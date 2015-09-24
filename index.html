@@ -4,23 +4,35 @@
 		<title>BookFace</title>
 		<link rel="shortcut icon" href="bookfaceicon.png">
 		<link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="main.css">	
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="lightbox/css/lightbox.css" rel="stylesheet">	
 	</head>
 	<body>
-		<header ng-controller="ShellController"><img class="logo" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/11898738_10207390168061883_3563556551345664075_n.jpg?oh=c4b220ebbbf822b5d2c7da90fd8ee19a&oe=56631B29"><h1 class="inline">BookFace:</h1> <h2 class="inline">The new social network &trade;</h2><weather class="weather"></weather></header>
-
-		<a href="#/"><button class="btn btn-primary">Feed News</button></a>
-		<a href="#/chatView"><button class="btn btn-primary btn-large">Chat</button></a>
-		<a href="http://www.paulkeeb.talktalk.net/bookface/" target="_blank"><button class="btn btn-primary">I'm British and Confused</button></a>
-
-		<!-- Post view and chat view go below -->
+		<!-- The shell for the view -->
+		<header ng-controller="ShellController">
+			<div class="header">
+				<img class="logo" src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/11898738_10207390168061883_3563556551345664075_n.jpg?oh=c4b220ebbbf822b5d2c7da90fd8ee19a&oe=56631B29">
+				<h1 class="inline">BookFace:</h1> 
+				<h2 class="inline">The new social network &trade;</h2>
+				<nav class="inline">
+					<a href="#/"><button class="btn btn-primary">Feed News</button></a>
+					<a href="#/chatView"><button class="btn btn-primary btn-large">Chat</button></a>
+					<a href="http://www.paulkeeb.talktalk.net/bookface/" target="_blank"><button class="btn btn-primary">I'm British and Confused</button></a>
+				</nav>
+				<weather class="weather"></weather>
+			</div>
+		</header>
+		
+		<!-- Post view and chat view are here -->
 		<ng-view></ng-view>
+		<!-- Wow look at all those scripts -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
 		<script src="https://code.angularjs.org/1.4.6/angular-route.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
     	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.4.js"></script>
+    	<script src="lightbox/js/lightbox.js"></script>
 		<script src="app.js"></script>
 		<script src="postService.js"></script>
 		<script src="post.js"></script>
